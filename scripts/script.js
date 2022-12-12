@@ -242,8 +242,8 @@ function kill(event) {
       killCell.classList.add("kingBlack");
       killCell.classList.add("blackFigure");
     }
+    whiteCanWalk = true;
   }
-  whiteCanWalk = true;
 }
 
 // рокировка
@@ -1598,10 +1598,10 @@ function queenWalkingLogic(axisY, axisX, chessCell) {
 function kingWalkingRightUpLogic(axisY, axisX) {
   axisX++;
   axisY++;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1614,10 +1614,10 @@ function kingWalkingRightUpLogic(axisY, axisX) {
 function kingWalkingLeftUpLogic(axisY, axisX) {
   axisX--;
   axisY++;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1630,10 +1630,10 @@ function kingWalkingLeftUpLogic(axisY, axisX) {
 function kingWalkingRightDownLogic(axisY, axisX) {
   axisX++;
   axisY--;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1646,10 +1646,10 @@ function kingWalkingRightDownLogic(axisY, axisX) {
 function kingWalkingLeftDownLogic(axisY, axisX) {
   axisX--;
   axisY--;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1661,10 +1661,10 @@ function kingWalkingLeftDownLogic(axisY, axisX) {
 // логика двиения короля вверх
 function kingWalkingUpLogic(axisY, axisX) {
   axisY++;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1676,10 +1676,10 @@ function kingWalkingUpLogic(axisY, axisX) {
 // логика двиения короля вниз
 function kingWalkingDownLogic(axisY, axisX) {
   axisY--;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1691,10 +1691,10 @@ function kingWalkingDownLogic(axisY, axisX) {
 // логика двиения короля вправо
 function kingWalkingRightLogic(axisY, axisX) {
   axisX++;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
@@ -1706,10 +1706,10 @@ function kingWalkingRightLogic(axisY, axisX) {
 // логика двиения короля влево
 function kingWalkingLeftLogic(axisY, axisX) {
   axisX--;
-  if (axisY < 9) {
-    if (axisY > 0) {
-      if (axisX < 9) {
-        if (axisX > 0) {
+  if (axisY <= 8) {
+    if (axisY >= 1) {
+      if (axisX <= 8) {
+        if (axisX >= 1) {
           axisX = numToXaxis[axisX];
           canGo = axisX + axisY;
           sectionsForGo.push(canGo);
