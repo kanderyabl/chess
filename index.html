@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chess</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="chessTable">
+      <div id="A8" class="chessCell castleBlack blackFigure"></div>
+      <div id="B8" class="chessCell blackCell knightBlack blackFigure"></div>
+      <div id="C8" class="chessCell bishopBlack blackFigure"></div>
+      <div id="D8" class="chessCell blackCell queenBlack blackFigure"></div>
+      <div id="E8" class="chessCell kingBlack blackFigure"></div>
+      <div id="F8" class="chessCell blackCell bishopBlack blackFigure"></div>
+      <div id="G8" class="chessCell knightBlack blackFigure"></div>
+      <div id="H8" class="chessCell blackCell castleBlack blackFigure"></div>
+
+      <div id="A7" class="chessCell blackCell pawnBlack blackFigure"></div>
+      <div id="B7" class="chessCell pawnBlack blackFigure"></div>
+      <div id="C7" class="chessCell blackCell pawnBlack blackFigure"></div>
+      <div id="D7" class="chessCell pawnBlack blackFigure"></div>
+      <div id="E7" class="chessCell blackCell pawnBlack blackFigure"></div>
+      <div id="F7" class="chessCell pawnBlack blackFigure"></div>
+      <div id="G7" class="chessCell blackCell pawnBlack blackFigure"></div>
+      <div id="H7" class="chessCell pawnBlack blackFigure"></div>
+
+      <div id="A6" class="chessCell"></div>
+      <div id="B6" class="chessCell blackCell"></div>
+      <div id="C6" class="chessCell"></div>
+      <div id="D6" class="chessCell blackCell"></div>
+      <div id="E6" class="chessCell"></div>
+      <div id="F6" class="chessCell blackCell"></div>
+      <div id="G6" class="chessCell"></div>
+      <div id="H6" class="chessCell blackCell"></div>
+
+      <div id="A5" class="chessCell blackCell"></div>
+      <div id="B5" class="chessCell"></div>
+      <div id="C5" class="chessCell blackCell"></div>
+      <div id="D5" class="chessCell"></div>
+      <div id="E5" class="chessCell blackCell"></div>
+      <div id="F5" class="chessCell"></div>
+      <div id="G5" class="chessCell blackCell"></div>
+      <div id="H5" class="chessCell"></div>
+
+      <div id="A4" class="chessCell"></div>
+      <div id="B4" class="chessCell blackCell"></div>
+      <div id="C4" class="chessCell"></div>
+      <div id="D4" class="chessCell blackCell"></div>
+      <div id="E4" class="chessCell"></div>
+      <div id="F4" class="chessCell blackCell"></div>
+      <div id="G4" class="chessCell"></div>
+      <div id="H4" class="chessCell blackCell"></div>
+
+      <div id="A3" class="chessCell blackCell"></div>
+      <div id="B3" class="chessCell"></div>
+      <div id="C3" class="chessCell blackCell"></div>
+      <div id="D3" class="chessCell"></div>
+      <div id="E3" class="chessCell blackCell"></div>
+      <div id="F3" class="chessCell"></div>
+      <div id="G3" class="chessCell blackCell"></div>
+      <div id="H3" class="chessCell"></div>
+
+      <div id="A2" class="chessCell pawnWhite whiteFigure"></div>
+      <div id="B2" class="chessCell blackCell pawnWhite whiteFigure"></div>
+      <div id="C2" class="chessCell pawnWhite whiteFigure"></div>
+      <div id="D2" class="chessCell blackCell pawnWhite whiteFigure"></div>
+      <div id="E2" class="chessCell pawnWhite whiteFigure"></div>
+      <div id="F2" class="chessCell blackCell pawnWhite whiteFigure"></div>
+      <div id="G2" class="chessCell pawnWhite whiteFigure"></div>
+      <div id="H2" class="chessCell blackCell pawnWhite whiteFigure"></div>
+
+      <div id="A1" class="chessCell blackCell castleWhite whiteFigure"></div>
+      <div id="B1" class="chessCell knightWhite whiteFigure"></div>
+      <div id="C1" class="chessCell blackCell bishopWhite whiteFigure"></div>
+      <div id="D1" class="chessCell queenWhite whiteFigure"></div>
+      <div id="E1" class="chessCell blackCell kingWhite whiteFigure"></div>
+      <div id="F1" class="chessCell bishopWhite whiteFigure"></div>
+      <div id="G1" class="chessCell blackCell knightWhite whiteFigure"></div>
+      <div id="H1" class="chessCell castleWhite whiteFigure"></div>
+
+      <div class="axisX">
+        <div class="axisx">a</div>
+        <div class="axisx">b</div>
+        <div class="axisx">c</div>
+        <div class="axisx">d</div>
+        <div class="axisx">e</div>
+        <div class="axisx">f</div>
+        <div class="axisx">g</div>
+        <div class="axisx">h</div>
+      </div>
+
+      <div class="axisY">
+        <div class="axisy">1</div>
+        <div class="axisy">2</div>
+        <div class="axisy">3</div>
+        <div class="axisy">4</div>
+        <div class="axisy">5</div>
+        <div class="axisy">6</div>
+        <div class="axisy">7</div>
+        <div class="axisy">8</div>
+      </div>
+
+      <div id="popup" class="popupWhite">
+        <div class="popupBody">
+          <div class="popupContent">
+            <div class="popupItems">
+              <div class="popupItem castleWhite"></div>
+              <div class="popupItem knightWhite"></div>
+              <div class="popupItem bishopWhite"></div>
+              <div class="popupItem queenWhite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup" class="popupBlack">
+        <div class="popupBody">
+          <div class="popupContent">
+            <div class="popupItems">
+              <div class="popupItem castleBlack"></div>
+              <div class="popupItem knightBlack"></div>
+              <div class="popupItem bishopBlack"></div>
+              <div class="popupItem queenBlack"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+body {
+  background: url("/img/bg2.jpg") center center fixed no-repeat;
+  background-size: cover;
+}
+
+.chessTable {
+  width: 700px;
+  height: 700px;
+  max-height: 700px;
+  min-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.chessCell {
+  width: 12.5%;
+  height: 12.5%;
+  background: #fff;
+}
+.blackCell {
+  background: #000;
+}
+
+.axisX,
+.axisY {
+  position: absolute;
+  background: rgba(255, 137, 2, 0.5);
+  font-size: 20px;
+  justify-content: space-around;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.axisX {
+  display: flex;
+  bottom: -27px;
+  width: 100%;
+}
+.axisY {
+  display: flex;
+  flex-direction: column-reverse;
+  left: -35px;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.canWalk {
+  -webkit-box-shadow: inset 0px 0px 34px 6px rgba(23, 175, 42, 1);
+  -moz-box-shadow: inset 0px 0px 34px 6px rgba(23, 175, 42, 1);
+  box-shadow: inset 0px 0px 34px 6px rgba(23, 175, 42, 1);
+  cursor: pointer;
+}
+.selectedFigure {
+  -webkit-box-shadow: inset 0px 0px 24px 0px rgba(165, 164, 167, 1);
+  -moz-box-shadow: inset 0px 0px 24px 0px rgba(165, 164, 167, 1);
+  box-shadow: inset 0px 0px 24px 0px rgba(165, 164, 167, 1);
+  cursor: pointer;
+}
+.canKill {
+  -webkit-box-shadow: inset 0px 0px 24px 9px rgba(255, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 24px 9px rgba(255, 0, 0, 1);
+  box-shadow: inset 0px 0px 24px 9px rgba(255, 0, 0, 1);
+  cursor: pointer;
+}
+
+.castling {
+  background-image: url("/img/castling.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.pawnBlack {
+  background-image: url("/img/chessmen/black/pawn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.pawnWhite {
+  background-image: url("/img/chessmen/white/pawn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.castleBlack {
+  background-image: url("/img/chessmen/black/castle.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.castleWhite {
+  background-image: url("/img/chessmen/white/castle.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.knightBlack {
+  background-image: url("/img/chessmen/black/knight.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.knightWhite {
+  background-image: url("/img/chessmen/white/knight.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.bishopBlack {
+  background-image: url("/img/chessmen/black/bishop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.bishopWhite {
+  background-image: url("/img/chessmen/white/bishop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.queenBlack {
+  background-image: url("/img/chessmen/black/queen.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.queenWhite {
+  background-image: url("/img/chessmen/white/queen.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.kingBlack {
+  background-image: url("/img/chessmen/black/king.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.kingWhite {
+  background-image: url("/img/chessmen/white/king.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.popupWhite,
+.popupBlack {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popupOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popupBody {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 30px 10px;
+}
+.popupContent {
+  background-color: #ffff00;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+.popupItems {
+  display: flex;
+  gap: 30px;
+}
+
+.popupItem {
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: inset 8px 7px 23px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 8px 7px 23px -1px rgba(66, 68, 90, 1);
+  box-shadow: inset 8px 7px 23px -1px rgba(66, 68, 90, 1);
+}
+.popupItem:hover {
+  -webkit-box-shadow: inset 2px 3px 23px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 2px 3px 23px -1px rgba(66, 68, 90, 1);
+  box-shadow: inset 2px 3px 23px -1px rgba(66, 68, 90, 1);
+}
