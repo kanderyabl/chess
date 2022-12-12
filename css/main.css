@@ -1,5 +1,5 @@
 body {
-  background: url("img/bg2.jpg") center center fixed no-repeat;
+  background: url("../img/bg2.jpg") center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .castling {
-  background-image: url("img/castling.png");
+  background-image: url("../img/castling.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -77,73 +77,73 @@ body {
 }
 
 .pawnBlack {
-  background-image: url("img/chessmen/black/pawn.png");
+  background-image: url("../img/chessmen/black/pawn.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .pawnWhite {
-  background-image: url("img/chessmen/white/pawn.png");
+  background-image: url("../img/chessmen/white/pawn.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .castleBlack {
-  background-image: url("img/chessmen/black/castle.png");
+  background-image: url("../img/chessmen/black/castle.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .castleWhite {
-  background-image: url("img/chessmen/white/castle.png");
+  background-image: url("../img/chessmen/white/castle.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .knightBlack {
-  background-image: url("img/chessmen/black/knight.png");
+  background-image: url("../img/chessmen/black/knight.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .knightWhite {
-  background-image: url("img/chessmen/white/knight.png");
+  background-image: url("../img/chessmen/white/knight.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .bishopBlack {
-  background-image: url("img/chessmen/black/bishop.png");
+  background-image: url("../img/chessmen/black/bishop.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .bishopWhite {
-  background-image: url("img/chessmen/white/bishop.png");
+  background-image: url("../img/chessmen/white/bishop.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .queenBlack {
-  background-image: url("img/chessmen/black/queen.png");
+  background-image: url("../img/chessmen/black/queen.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .queenWhite {
-  background-image: url("img/chessmen/white/queen.png");
+  background-image: url("../img/chessmen/white/queen.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .kingBlack {
-  background-image: url("img/chessmen/black/king.png");
+  background-image: url("../img/chessmen/black/king.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .kingWhite {
-  background-image: url("img/chessmen/white/king.png");
+  background-image: url("../img/chessmen/white/king.png");
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
